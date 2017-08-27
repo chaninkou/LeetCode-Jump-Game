@@ -2,7 +2,7 @@ package example4;
 
 /*   
 Author: Chan In Kou
-Purpose: The Display will a pattern. 
+Purpose: The Display will a pattern 
 */
 public class Example4 {
 	public static void main(String[] args) {
