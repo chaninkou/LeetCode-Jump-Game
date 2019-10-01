@@ -12,7 +12,7 @@ public class CheckIfFirstRearchEndFunction {
             
             // Don't really need this, but
             // If maxDistance could reach the end of the index already, return true
-            if(maxDistance >= nums.length){
+            if(maxDistance >= nums.length - 1){
                 return true;
             }
             
