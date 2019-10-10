@@ -4,6 +4,7 @@ public class CheckIfFirstRearchEndFunction {
     public boolean canJump(int[] nums) {
         int maxDistance = 0;
         
+        // starting from first index, calculate the distance the current distance could reach
         for(int i = 0; i < nums.length; i++){
             // If it can't reach to current index with zero, return false
             if(maxDistance < i){
