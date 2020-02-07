@@ -8,7 +8,7 @@ public class CheckIfFirstRearchEndFunction {
         for(int i = 0; i < nums.length; i++){
             // If it can't reach to current index with zero, return false
             if(maxDistance < i){
-                return false;
+                return false; 
             }
             
             // Don't really need this, but
