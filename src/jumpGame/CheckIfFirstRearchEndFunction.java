@@ -18,9 +18,29 @@ public class CheckIfFirstRearchEndFunction {
             }
             
             // if current index plus current value more than maxDistance, update maxDistance, otherwise current maxDistance is the best
-            maxDistance = ((i + nums[i]) > maxDistance) ? (i+ nums[i]) : maxDistance;
+            if(i + nums[i] > maxDistance){
+            	maxDistance = i + nums[i];
+            }
         }
         
         return true;
+    }
+    
+    public boolean canJump2(int[] nums){
+    	if(nums == null || nums.length == 0){
+    		return false;
+    	}
+    	
+    	int canReachTo = nums.length - 1;
+    	
+    	// If it can reach to the last element, then save that index
+    	for(int i = nums.length - 2; i >= 0; i--){
+    		if(i + nums[i] >= canReachTo){
+    			canReachTo = i;
+    		}
+    	}
+    	
+    	// It must to able to reach from index 0;
+    	return canReachTo == 0;
     }
 }
