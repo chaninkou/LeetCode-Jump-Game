@@ -18,14 +18,16 @@ public class CheckIfFirstRearchEndFunction {
             }
             
             // if current index plus current value more than maxDistance, update maxDistance, otherwise current maxDistance is the best
-            if(i + nums[i] > maxDistance){
-            	maxDistance = i + nums[i];
-            }
+//            if(i + nums[i] > maxDistance){
+//            	maxDistance = i + nums[i];
+//            }
+            maxDistance = Math.max(maxDistance, i + nums[i]);
         }
         
         return true;
     }
     
+    // Method 2
     public boolean canJump2(int[] nums){
     	if(nums == null || nums.length == 0){
     		return false;
