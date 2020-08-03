@@ -1,4 +1,4 @@
-package jumpGame;
+package leetcode55;
 
 import java.util.Arrays;
 

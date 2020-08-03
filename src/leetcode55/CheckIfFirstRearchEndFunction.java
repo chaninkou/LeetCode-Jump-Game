@@ -1,4 +1,4 @@
-package jumpGame;
+package leetcode55;
 
 public class CheckIfFirstRearchEndFunction {
     public boolean canJump(int[] nums) {
